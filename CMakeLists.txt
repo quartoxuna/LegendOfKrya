@@ -26,6 +26,7 @@ add_executable(
 target_link_libraries(
     ${PROJECT_NAME}
     LINK_PUBLIC engine
+    sfml-system sfml-window sfml-graphics
 )
 
 # Define Compile Features

@@ -1,12 +1,17 @@
 #pragma once
 
-#include <iostream>
+#include <SFML/Graphics.hpp>
 
 class Game
 {
 private:
-    bool m_isRunning{true};
+    sf::RenderWindow m_window;
+
+    bool m_isRunning;
 
 public:
-    Game();    
+    Game();
+    
+    void run();
+    
 };
