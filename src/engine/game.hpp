@@ -7,11 +7,16 @@ class Game
 private:
     sf::RenderWindow m_window;
 
-    bool m_isRunning;
+    bool m_running;
 
 public:
     Game();
     
     void run();
+    void quit();
+
+    void handleEvents();
+    void update();
+    void render();
     
 };
